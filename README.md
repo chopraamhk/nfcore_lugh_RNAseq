@@ -14,7 +14,7 @@ python3 make_samplesheet.py -i path/to/folder/where/RNAseq_data/is/available
 ```
 
 or if the file of each run is in a folder (sample(folder) --- R1 and R2) and you want to make one file at the end
-
+(samplesheet1.csv is in McCleary cluster folder) 
 ```
 python3 make_samplesheet1.py -i path/to/folder/where/RNAseq_data/is/available/Sample_* -o samplesheet1.csv
 ```

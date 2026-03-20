@@ -3,18 +3,18 @@ Instructions to run nf-core bulk RNAseq pipeline on University of Galway - lugh 
 
 Reference: https://nf-co.re/configs/lugh/
 
-Step 1: Make a spreadsheet which has header:
+Step 1: Make a spreadsheet (name - "samplesheet1.csv") which has header:
 ```
 sample,fastq_1,fastq_2,strandedness
 ```
 
 Step 2:
 ```
-python3 make_samplesheet.py -i path/to/folder/where/RNAseq_data/is/available
+python3 make_samplesheet.py -i path/to/folder/where/RNAseq_data/is/available  -o samplesheet1.csv
 ```
 
 or if the file of each run is in a folder (sample(folder) --- R1 and R2) and you want to make one file at the end
-(samplesheet1.csv is in McCleary cluster folder) 
+(make_samplesheet1.py is in McCleary cluster folder) - output should be the same file created above. 
 ```
 python3 make_samplesheet1.py -i path/to/folder/where/RNAseq_data/is/available/Sample_* -o samplesheet1.csv
 ```

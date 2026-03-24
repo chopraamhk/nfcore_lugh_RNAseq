@@ -8,7 +8,12 @@ Step 1: Make a spreadsheet (name - "samplesheet1.csv") which has header:
 sample,fastq_1,fastq_2,strandedness
 ```
 
-Step 2:
+and for small-RNAseq
+```
+sample fastq_1 fastq_2
+```
+
+Step 2: - the below will also add auto as it was written for bulk data
 ```
 python3 make_samplesheet.py -i path/to/folder/where/RNAseq_data/is/available  -o samplesheet1.csv
 ```

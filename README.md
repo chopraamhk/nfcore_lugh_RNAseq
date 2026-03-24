@@ -31,5 +31,12 @@ header=$(head -n1 samplesheet.csv); tail -n +2 samplesheet.csv | split -l 20 - s
 ```
 
 Step 3: Use local_config.sh and run the bash script
+```
+sbatch nfcore_rnaseq.sh
+```
 
-sbatch nfcore_bash.sh
+or 
+
+```
+sbatch nfcore_smrnaseq.sh
+```
